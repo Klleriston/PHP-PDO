@@ -7,8 +7,8 @@ $databasePath = __DIR__ . "/../Database.sqlite";
 $pdo = new PDO('sqlite:' . $databasePath);
 
 try {
-    $statment = $pdo->query('SELECT * FROM students;');
-    $studentArray = $statment->fetch(PDO::FETCH_ASSOC);
+    $statement = $pdo->query('SELECT * FROM students;');
+    $studentArray = $statement->fetch(PDO::FETCH_ASSOC);
    var_dump($studentArray); exit ();
     $studentList = [];
 
